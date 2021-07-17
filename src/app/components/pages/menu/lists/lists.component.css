@@ -1,0 +1,14 @@
+.character__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+}
+.card {
+    border: 5px solid rgba(255, 255, 255, 0.90);
+    box-shadow: 2px 2px 6px 0px rgba(255, 255, 255, 0.3);
+    max-width: 100%;
+}
+img {
+    opacity: 1;
+  }
