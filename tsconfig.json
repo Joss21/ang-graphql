@@ -1,15 +1,23 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@app/*":["src/app/*"],
-      "@shared/*":["src/app/shared/*"],
-      "@menu/*":["src/app/components/pages/menu/*"],
-      "@pages/*":["src/app/components/pages/*"],
-      "@enviroment/*":["src/app/environments/*"],
-
+      "@app/*": [
+        "src/app/*"
+      ],
+      "@shared/*": [
+        "src/app/shared/*"
+      ],
+      "@menu/*": [
+        "src/app/components/pages/menu/*"
+      ],
+      "@pages/*": [
+        "src/app/components/pages/*"
+      ],
+      "@enviroment/*": [
+        "src/app/environments/*"
+      ]
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
@@ -22,7 +30,9 @@
     "module": "es2020",
     "lib": [
       "es2018",
-      "dom"
-    ]
+      "dom",
+      "esnext.asynciterable"
+    ],
+    "allowSyntheticDefaultImports": true
   }
 }

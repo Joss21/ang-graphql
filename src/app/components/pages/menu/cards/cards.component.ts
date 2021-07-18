@@ -1,6 +1,5 @@
-
 import { ChangeDetectionStrategy, Component, Input} from '@angular/core';
-//import { Menu } from '@app/shared/interfaces/data.interface';
+import { Restaurant } from '@app/shared/interface/data.interface';
 
 @Component({
   selector: 'app-cards',
@@ -9,6 +8,6 @@ import { ChangeDetectionStrategy, Component, Input} from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CardsComponent {
-  /*@Input() character: Character; */ 
+  @Input() restaurant: Restaurant; 
 
 } 

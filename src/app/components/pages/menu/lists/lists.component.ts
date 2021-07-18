@@ -1,19 +1,21 @@
 
 import { Component} from '@angular/core';
-// import { DataService } from '@shared/services/data.service';
+import { DataService } from '@app/shared/service/data.service';
 
 @Component({
   selector: 'app-lists',
   template: `
   <section class="character__list">
-   
+  <app-cards 
+      *ngFor="let restaurant of restaurant$ | async" [restaurant]="restaurant" >
+    </app-cards>
 </section>
   `,
   styleUrls: ['./lists.component.css']
 })
 export class ListsComponent {
- // characters$ = this.dataSvc.characters$;
+  restaurant$ = this.dataSvc.restaurant$;
 
-  /* constructor(
-    private dataSvc: DataService) { } */
+  constructor(
+    private dataSvc: DataService) { } 
 }
