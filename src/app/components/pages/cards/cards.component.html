@@ -1,0 +1,37 @@
+<!--  <section class="character__list">
+  *ngFor="let restaurant of restaurants | async" >
+  <article class="card">
+    <figure>
+        <img rel="preload" as="image" width="300" height="300" [src]="restaurant.image" [alt]="restaurant.name" />
+    </figure>
+
+<div class="card__details">
+    <h3>{{restaurant.name}}</h3>
+    <ul class="card__list">
+        <li>
+            <label class="table__label"></label>
+            {{restaurant.description}}
+        </li>
+        <li>
+            <label class="table__label">Precio:</label>
+            {{restaurant.price}}
+        </li>
+
+    </ul>
+</div>
+</article> 
+</section> -->
+
+<div class="row">
+  <div *ngFor="let restaurant of restaurants | async" class="list-group-item">
+      <div class="card-body">
+          <h5 class="card-title">
+              {{restaurant.name}}
+              <img rel="preload" as="image" width="300" height="300" [src]="restaurant.image" [alt]="restaurant.name" />
+              {{restaurant.description}}
+              {{restaurant.price}}
+
+          </h5>
+      </div>
+  </div>
+</div>

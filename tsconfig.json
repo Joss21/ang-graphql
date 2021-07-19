@@ -9,9 +9,6 @@
       "@shared/*": [
         "src/app/shared/*"
       ],
-      "@menu/*": [
-        "src/app/components/pages/menu/*"
-      ],
       "@pages/*": [
         "src/app/components/pages/*"
       ],
