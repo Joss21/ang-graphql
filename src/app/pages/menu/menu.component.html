@@ -1,0 +1,46 @@
+<h1 class="titulo">Menú</h1>
+<div class="row mb-3">
+<div *ngFor="let restaurant of restaurants " class="col">
+<article >
+    <figure>
+        <img width="300" height="300" [src]="restaurant.image" [alt]="restaurant.name" />
+    </figure>
+
+<div class="card__details">
+    <h3>{{restaurant.name}}</h3>
+    <ul class="card__list">
+        <li>
+            <label class="table__label">Descripción:</label>
+            {{restaurant.description}}
+        </li>
+        <li>
+            <label class="table__label">Precio:</label>
+            {{restaurant.price}}$
+        </li>
+
+    </ul>
+</div>
+
+</article>
+</div>
+</div>
+
+<!-- 
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12" *ngFor="let restaurant of restaurants">
+        <div 
+          class="card" 
+          style="width: 25rem;">
+          <img width="300" height="300" [src]="restaurant.image" [alt]="restaurant.name" />
+          <div>
+            <div class="card-body">
+              <h5 class="card-title">{{episode.name}}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Season {{restaurant.description}} Episode {{restaurant.price}}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->

@@ -10,7 +10,7 @@
         "src/app/shared/*"
       ],
       "@pages/*": [
-        "src/app/components/pages/*"
+        "src/app/pages/*"
       ],
       "@enviroment/*": [
         "src/app/environments/*"
